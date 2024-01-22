@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    text-align : center;
+    min-height: 100vh;
+    color: #39b2c2;
+    background-color: #fcfcfc;
+    font-weight: 300;
+    display: grid;
+    justify-content: center;
+
+} 
+
+main{
+    display: grid;
+    align-items:center ;
+    flex-direction: column;
+    gap: 2em;
+
+}
+.main-title{
+    font-size: 1.5em;
+    font-weight: 800;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+.main-form {
+    display: grid;
+    gap: 0.6em;
+    justify-content: center;
+}
+input {
+    all: unset;
+    padding: 0.3em .6em;
+    width: 70%;
+    border: 1px solid lightgreen ;
+    text-align: start;
+    color: #131313;
+}
+
+input:focus {
+    border: 3px solid green;
+}
+
+.main-error-prompt {
+    color: #ff7864;
+    font-weight: 700;
+    font-size: 1em;
+    display: none;
+}
+
+button:not(.main-form-submit-btn){
+    all:unset ;
+    background-color: lightgreen;
+    width: 60px;
+    height: 60px;
+    transition: all .5s ease;
+    border-radius: 50%;
+}
+
+.main-form-submit-btn{
+    all: unset;
+    width: 5em;
+    background-color: lightgreen;
+    padding: .7em 0;
+    transition: all .5s ease;
+}
+
+button:active {
+    transform:  scale(.95) translateY(5px);
+    filter: brightness(.9);
+}
+
+.main-scoreWrapper{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    gap: 1em;
+
+}
+
+.main-scoreboard {
+    display: grid;
+    justify-items: center;
+    gap: .3em;
+    width: 90%;
+    background-color: lightgreen;
+    text-transform: uppercase;
+    padding: 1em 0;
+
+}
+
+.main-player {
+    font-weight: 400;
+}
+
+.main-time-stamp {
+    color: #686868;
+    font-size: .8em;
+}
+
+.main-scoreboard-btn-container{
+    margin: 1em;
+    display: flex;
+    gap: .8em;
+}
+
+@media (min-width:35.25em) {
+    .main-title{
+        font-size: 2.5rem;
+        font-weight: 500;
+        font-variant: small-caps;
+    }
+
+    .main-form{
+        display: flex;
+    }
+
+    .main-scoreboard{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    input {
+        width: 10em;
+    }
+}

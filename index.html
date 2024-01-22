@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leader Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="main-title">LEADERBOARD</h1>
+        <form class="main-form">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Country">
+            <input type="number" max="100" min="0" placeholder="Player Score">
+
+            <button class="main-form-submit-btn">Add Player</button>
+
+        </form>
+
+        <p class="main-error-prompt">All fields are required.</p>
+
+        <div class="main-scoreWrapper">
+            <div class="main-scoreboard">
+                <div>
+                    <p class="main-player">Chota Sarkar</p>
+                    <p class="main-time-stamp">Jan 2023: 09:24:44</p>
+                </div>
+
+                <p class="main-player-country">India</p>
+                <p class="main-player-score">75</p>
+                <div class="main-scoreboard-btn-container">
+                    <button>&#x1f5d1;</button>
+                    <button>+5</button>
+                    <button>-5</button>
+
+                </div>
+            </div>
+            <div class="main-scoreboard">
+                <div>
+                    <p class="main-player">Viru Paji</p>
+                    <p class="main-time-stamp">feb 2023: 12:24:44</p>
+                </div>
+
+                <p class="main-player-country">India</p>
+                <p class="main-player-score">85</p>
+                <div class="main-scoreboard-btn-container">
+                    <button>&#x1f5d1;</button>
+                    <button>+5</button>
+                    <button>-5</button>
+
+                </div>
+            </div>
+            <div class="main-scoreboard">
+                <div>
+                    <p class="main-player"> Lalbabu Prasad</p>
+                    <p class="main-time-stamp">march 2023: 19:24:44</p>
+                </div>
+
+                <p class="main-player-country">India</p>
+                <p class="main-player-score">95</p>
+                <div class="main-scoreboard-btn-container">
+                    <button>&#x1f5d1;</button>
+                    <button>+5</button>
+                    <button>-5</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
